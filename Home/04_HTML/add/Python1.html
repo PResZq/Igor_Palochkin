@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Python #1</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="Icon-Python.7bb116a5.png" alt="pyton_icon" title="Python" class="pic">
+    <h1>HOW-TO: Программа на Python, Часть 1</h1>
+
+    <ul>
+
+        <li><em><a href="Python1.html">Программа на Python - часть 1</a></em></li>
+        <li><em><a href="Python2.html">Программа на Python - часть 2</a></em></li>
+        <li><em><a href="Python3.html">Программа на Python - часть 3</a></em></li>
+    </ul>
+
+    <h2 id="cont">Содержание</h2>
+    <h3>HOW-TO: Программа на Python, Часть 1</h3>
+
+    <ul>
+        <li><a href="#perv">Наша первая программа</a></li>
+        <li><a href="#example">Пример цикла For</a></li>
+    </ul>
+
+    <p>Из множества существующих языков программирования Python — один из самых лёгких
+        в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+        Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+        обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+        создание консольных приложений, а в следующей — программирование графических
+        интерфейсов (<u>GUI</u>). Давайте создадим простую программу прямо сейчас.
+    </p>
+
+    <h2 id="perv">Наша первая программа</h2>
+    <a href="#cont"> К содержанию</a>
+    <p>Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает
+        каждая строка и пойдём дальше.</p>
+    <p>Введите эти четыре строки:</p>
+    <pre><code>
+#!/usr/bin/env python
+print 'Hello. I am a python program.'
+name = raw_input("What is your name?")
+print "Hello there, " + name + "!"
+    </code></pre>
+
+    <p>
+        Это всё. Сохраните файл как <b>hello.py</b> в любом месте. Я предлагаю сохранить его в папке
+        <b>python_examples</b> в домашнем каталоге. Этот пример показывает, как просто написать
+        программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+        этого введите в терминале
+    </p>
+
+    <p><u><i><b>chmod +x hello.py</b></i></u></p>
+
+    <p>В папке, в которой вы сохранили программу. Теперь запустите её.</p>
+    <p>greg@earth:~/python_examples$ ./hello.py<br>
+        Hello. I am a python program.<br>
+        What is your name? Ferd Burphel<br>
+        Hello there, Ferd Burphel!<br>
+        greg@earth:~/python_examples$<br>
+    </p>
+    <p>Вот и всё.</p>
+
+    <h2 id="example">Пример цикла For</h2>
+    <a href="#cont"> К содержанию</a>
+    <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+        редактор и наберите следующую программу:
+    </p>
+    <pre><code>
+#!/usr/bin/env python
+for cntr in range(0,10):
+&nbsp; print cntr
+    </code></pre>
+    <p><i>Не забудьте поставить символ табуляции перед строкой «print cntr».</i> Это важно. В
+        Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
+        как в других языках программирования, а отступы.
+    </p>
+
+    <table width="100%">
+        <tr>
+            <td align="left">
+                <a href="#" alt="Предыдущая страница" title="Предыдущая страница">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" >
+                        <path
+                            d="M20 0H0v20h20zm-7.354 14.166-1.389 1.439-5.737-5.529 5.729-5.657 1.4 1.424-4.267 4.215z" />
+                    </svg>
+                </a>
+            </td>
+            <td align="center">
+                <a href="#cont" alt="Оглавление" title="Оглавление">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+                        <path
+                            d="M3.012 10.981 3 11h2v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-9h2a1 1 0 0 0 .555-1.832l-9-6a1 1 0 0 0-1.11 0l-9 6a1 1 0 0 0-.277 1.387.98.98 0 0 0 .844.426zM10 14a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h-4z" />
+                    </svg>
+
+                </a>
+            </td>
+            <td align="right">
+                <a href="Python2.html" alt="Следующая страница" title="Следующая страница">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40">
+                        <path
+                            d="M20 0H0v20h20zm-8.344 14.709-1.41-1.418L12.547 11H4V9h8.673l-2.38-2.379 1.414-1.414 4.737 4.736z" />
+                    </svg>
+                </a>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
