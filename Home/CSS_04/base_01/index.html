@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        border: .5px rgb(209, 205, 205) solid;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        height: 100px;
+        margin: 0px;
+        text-indent: 20px;
+
+    }
+
+    a[href*="docPDF"] {
+        background: url(AA.png) 100% no-repeat;
+        padding-right: 15px;
+    }
+    a[href*="word"] {
+        background: url(W.jfif) 100% no-repeat;
+        padding-right: 16px;
+    }
+    a[href*="archive"] {
+        background: url(zip.gif) 100% no-repeat;
+        padding-right: 16px;
+    }
+    ul{
+        list-style-image: url(file.jfif);
+    }
+    a[href*="manu_MSwrd"]:hover {
+        background: url(W.jfif) 100% no-repeat;
+        padding-right: 16px;
+    }
+    a[href*="manu_PDF"]:hover {
+        background: url(AA.png) 100% no-repeat;
+        padding-right: 16px;
+    }
+    a[href*="manu_zip"]:hover {
+        background: url(zip.gif) 100% no-repeat;
+        padding-right: 16px;
+    }
+</style>
+
+<body>
+    <h1>Форматы файлов.</h1>
+    <div>
+        <p>
+            .DOC или .doc(от англ <img src="arr.png"><a href="document">document</a>) - расширение имени файла,
+            используемое для файлов
+            представляющих текст, с
+            разметко или без. Расширение .DOC часто использовалось для обозначаения простых текстовых файлов без
+            формаирования, однако позже стало писпользоваться для двоичных форматов с разметкой.<br>
+            <a href="word">Документ MS Word</a>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            Portable Document Format(<img src="arr.png"><a href="PDF">PDF</a> - Межплатформенный формат электронных
+            документов, разработанный фирмой Adobe
+            Systems с использованием ряда возможностей языка Postscript <br>
+            <a href="docPDF">Документ PDF</a>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            ZIP - популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение <img src="arr.png"><a href=".zip">.zip</a> и
+            хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путем распаковки
+            с помощью специальной программы. <br>
+            <a href="archive">Архив</a>
+        </p>
+    </div>
+    <h2>Это список файлов</h2>
+    <ul>
+        <li><a href="manu_MSwrd">Документ MS Word</a></li>
+        <li><a href="manu_PDF">Документ PDF</a></li>
+        <li><a href="manu_zip">Архив</a></li>
+    </ul>
+</body>
+
+</html>

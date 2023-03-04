@@ -1,0 +1,9 @@
+.pic {
+    float: right;
+    box-align: top
+    
+}
+.button {
+    outline: none;
+    border: 0;
+}
